@@ -1,0 +1,39 @@
+.card {
+    height: 80px;
+    width: 100px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    font-size: 40px;
+    line-height: 80px;
+    cursor: pointer;
+}
+
+.card.selected {
+    box-shadow: 0px 0px 3px 3px rgba(0,150,150,0.75);
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.purple {
+    color: purple;
+}
+
+/* CREDIT: NYT SET GAME */
+
+@font-face{
+    font-family:'icomoon-set';
+    src:url('../icons/icomoon.eot');
+    src:url('../icons/icomoon.eot') format('embedded-opentype'),url('../icons/icomoon.woff') format('woff'),
+    url('../icons/icomoon.ttf') format('truetype'),
+    url('../icons/icomoon.svg') format('svg');
+    font-weight:normal;
+    font-style:normal
+}
+[class^="icon-set-"],[class*=" icon-set-"]{font-family:'icomoon-set'}
+.icon-set-quantity-1.icon-set-diamond-striped:before{content:"\e601"}.icon-set-quantity-1.icon-set-diamond-empty:before{content:"\e602"}.icon-set-quantity-1.icon-set-diamond-solid:before{content:"\e600"}.icon-set-quantity-1.icon-set-oval-solid:before{content:"\e606"}.icon-set-quantity-1.icon-set-oval-empty:before{content:"\e607"}.icon-set-quantity-1.icon-set-oval-striped:before{content:"\e608"}.icon-set-quantity-1.icon-set-squiggle-solid:before{content:"\e603"}.icon-set-quantity-1.icon-set-squiggle-empty:before{content:"\e604"}.icon-set-quantity-1.icon-set-squiggle-striped:before{content:"\e605"}.icon-set-quantity-2.icon-set-diamond-striped:before{content:"\e601\e601"}.icon-set-quantity-2.icon-set-diamond-empty:before{content:"\e602\e602"}.icon-set-quantity-2.icon-set-diamond-solid:before{content:"\e600\e600"}.icon-set-quantity-2.icon-set-oval-solid:before{content:"\e606\e606"}.icon-set-quantity-2.icon-set-oval-empty:before{content:"\e607\e607"}.icon-set-quantity-2.icon-set-oval-striped:before{content:"\e608\e608"}.icon-set-quantity-2.icon-set-squiggle-solid:before{content:"\e603\e603"}.icon-set-quantity-2.icon-set-squiggle-empty:before{content:"\e604\e604"}.icon-set-quantity-2.icon-set-squiggle-striped:before{content:"\e605\e605"}.icon-set-quantity-3.icon-set-diamond-striped:before{content:"\e601\e601\e601"}.icon-set-quantity-3.icon-set-diamond-empty:before{content:"\e602\e602\e602"}.icon-set-quantity-3.icon-set-diamond-solid:before{content:"\e600\e600\e600"}.icon-set-quantity-3.icon-set-oval-solid:before{content:"\e606\e606\e606"}.icon-set-quantity-3.icon-set-oval-empty:before{content:"\e607\e607\e607"}.icon-set-quantity-3.icon-set-oval-striped:before{content:"\e608\e608\e608"}.icon-set-quantity-3.icon-set-squiggle-solid:before{content:"\e603\e603\e603"}.icon-set-quantity-3.icon-set-squiggle-empty:before{content:"\e604\e604\e604"}.icon-set-quantity-3.icon-set-squiggle-striped:before{content:"\e605\e605\e605"}.icon-set-purple{color:#ac2cd7}.icon-set-red{color:#f00}.icon-set-green{color:#409743}
