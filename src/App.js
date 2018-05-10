@@ -3,7 +3,7 @@ import * as R from 'ramda';
 import './App.css';
 
 import Card from './card';
-import { allSetCards, shuffleArray, isSet } from './constants';
+import { allSetCards, shuffleArray, isSet } from './utils';
 
 class App extends Component {
   constructor(props) {
@@ -19,6 +19,7 @@ class App extends Component {
     
     this.clickCard = this.clickCard.bind(this);
     this.shuffleDisplayedCards = this.shuffleDisplayedCards.bind(this);
+    this.restartGame = this.restartGame.bind(this);
   }
 
   clickCard(selectedCard) {
@@ -72,6 +73,16 @@ class App extends Component {
     });
   }
 
+  restartGame(e) {
+    const newAllCards = shuffleArray(allSetCards);
+    this.setState({
+      allCards: R.slice(12, newAllCards.length, newAllCards),
+      displayedCards: R.slice(0, 12, newAllCards),
+      selectedCards: [],
+      setsFound: 0
+    });
+  }
+
   render() {
     const cardComponents = (card, idx) => {
       return <Card
@@ -94,6 +105,7 @@ class App extends Component {
           {cardsToDisplay}
         </div>
         <button onClick={this.shuffleDisplayedCards}>Shuffle Cards</button>
+        <button onClick={this.restartGame}>Restart Game</button>
         <div className="score">
           <strong>Sets found:</strong> {this.state.setsFound}
         </div>
